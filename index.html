@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework_02_AGE</title>
+    </head>
+    <body>
+        <script>
+            var answer = prompt('Укажите свой возраст');
+            answer = parseInt(answer, 10);
+            console.log(answer);
+            if (answer === 11 || answer === 12 || answer === 13 || answer === 14){
+                alert('Поздравляю, тебе ' + answer + ' лет');
+            }else if (answer % 10 === 1){
+                alert('Поздравляю, тебе ' + answer + ' год');
+            }else if (answer % 10 === 2
+                || answer % 10 === 3
+                || answer % 10 === 4){
+                alert('Поздравляю, тебе ' + answer + ' года');
+            }else if (answer % 10 === 5
+                || answer % 10 === 6
+                || answer % 10 === 7
+                || answer % 10 === 8
+                || answer % 10 === 9
+                || answer % 10 === 0) {
+                alert('Поздравляю, тебе ' + answer + ' лет');
+            }
+            else {
+                alert('Fuck you')
+            }
+
+        </script>
+    </body>
+</html>
+
